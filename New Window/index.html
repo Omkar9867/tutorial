@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New Window</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Click here to open new Window</h1>
+    </div>
+    <div class="button-container">
+        <button id="button" onclick="myfun(event)">Click</button>
+    </div>
+
+    <script>
+        var myWindow
+
+
+        function myfun(event) {
+            myWindow = window.open('');
+            setTimeout(() => {
+                myWindow.window.close();
+            }, 3000);
+            console.log(event);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
